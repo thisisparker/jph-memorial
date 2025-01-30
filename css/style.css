@@ -96,12 +96,28 @@ body {
   @media (min-width: 600px) {
     width: 600px;
   }
-  margin: 20px auto 0 auto;
+  margin: 20px auto 30px auto;
 }
 
 #photo img {
   width: 100%;
   filter: none;
+}
+
+#donations ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  li img {
+    max-width: 100%;
+  }
+  li:hover {
+    cursor: pointer;
+  }
 }
 
 /* ==========================================================================
