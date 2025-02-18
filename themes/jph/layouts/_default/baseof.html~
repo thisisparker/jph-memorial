@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }}</title>
+  {{ partial "head/css.html" . }}
+  <meta name="description" content="{{ .Description }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jamespatrickhiggins.com">
+  <meta property="og:image" content="https://jamespatrickhiggins.com/images/01.jpg">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="icon.png">
+</head>
+
+<body>
+
+  <main>
+  {{ partial "nav.html" . }}
+  {{ block "main" . }}{{ end }}
+  </main>
+  
+</body>
+
+</html>
