@@ -1,0 +1,4 @@
+{{ $full_path := $.RelativeURL }}
+{{ $viewerPath := "/js/pdf-js/web/viewer.html?"}}
+  <iframe id="pdf-js-viewer" src={{ $viewerPath }} title="webviewer" frameborder="0" width="500" height="600"></iframe>
+{{ end }}
