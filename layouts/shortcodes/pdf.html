@@ -1,7 +1,0 @@
-{{ with .Get "path" }}
-  {{ with $pdfpath := $.Page.Resources.Get ($.Get "path")}}
-    {{ with $l := .RelPermalink }}
-    <iframe id="pdf-js-viewer" src={{ printf "/js/pdf-js/web/viewer.html?file=%s" $l }} title="webviewer" frameborder="0" width="100%" height="600"></iframe>
-    {{ end }}
-  {{ end }}
-{{ end }}
