@@ -140,11 +140,9 @@ main {
 
 .grid {
   @media (min-width: 600px) {
-    width: calc(100vw - 100px);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: calc(-50vw + 50% + 50px);
   }
 }
 
